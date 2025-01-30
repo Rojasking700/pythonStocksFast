@@ -1,1 +1,19 @@
 Generic single-database configuration.
+
+
+5️⃣ Generate a Migration Script:
+  alembic revision --autogenerate -m "Initial migration"
+
+6️⃣ Review the Migration Script: Make sure everything looks correct. If needed, you can manually adjust the generated script.
+
+7️⃣ Apply the Migration:
+  alembic upgrade head
+
+
+Future Migrations
+
+  Whenever you make changes to your models (e.g., adding new fields, modifying relationships), follow these steps:
+
+      Modify your models (e.g., app/models/user.py).
+      Run alembic revision --autogenerate -m "describe changes".
+      Review and apply the new migration with alembic upgrade head.
