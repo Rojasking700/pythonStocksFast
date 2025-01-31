@@ -10,10 +10,10 @@ Generic single-database configuration.
   alembic upgrade head
 
 
-Future Migrations
+Future Migrations:
 
   Whenever you make changes to your models (e.g., adding new fields, modifying relationships), follow these steps:
 
       Modify your models (e.g., app/models/user.py).
-      Run alembic revision --autogenerate -m "describe changes".
-      Review and apply the new migration with alembic upgrade head.
+      Run: alembic revision --autogenerate -m "describe changes"
+      Review and apply the new migration with: alembic upgrade head

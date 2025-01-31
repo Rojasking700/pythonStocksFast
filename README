@@ -4,5 +4,4 @@ To run:
   First get in to the virtual enviornment (venv):
     venv\Scripts\activate
 
-  Next run this command: 
-    uvicorn app.main:app --reload
+  Next run this command: uvicorn app.main:app --reload
